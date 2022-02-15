@@ -17,10 +17,20 @@ check.addEventListener("click", () => {
             break;
         }
     }
+    
+    const valid = document.querySelector(".valid"+currentQtn);
+    valid.style.display = "block";
 
     if (opted == "ans") {
         correct++;
+        valid.append("Correct");
+        valid.style.color = "green";
     }
+    else {
+        valid.append("Incorrect");
+        valid.style.color = "red";
+    }
+
 
     let ansPara = document.querySelector(".ans"+currentQtn);
     ansPara.style.display = "block";
@@ -37,8 +47,15 @@ next.addEventListener("click", () => {
     currentQtn++;
 
     if (currentQtn > maxQtn) {
-        next.style.display = "none"; 
-        alert("finished"); 
+        next.style.display = "none";
+
+        const stats = document.querySelector(".stats");
+        stats.style.display = "flex";
+
+        const score = document.querySelector(".score");
+
+        score.append(correct + "/" + maxQtn);
+        return 
     }
 
     let nextQ = document.querySelector(".Q"+currentQtn);

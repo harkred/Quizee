@@ -8,14 +8,14 @@ body {
 
 header h1 {
     font-family: 'Festive', cursive;
-    font-size: 4.25em;
+    font-size: 4.5em;
     background-color: #000C66;
     color: #FFFFFF;
     padding: 0 0.80em 0 0.80em;
 }
 
 h6 {
-    font-size: 1.8em;
+    font-size: 1.15em !important;
 }
 
 div {
@@ -23,19 +23,48 @@ div {
     color: #050A30;
     display: none;
     padding: 0.2em;
-}
-
-
-input {
-    display: block;
+    border-color:#050A30;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 1.6em;
+    padding-bottom: 2em;
 }
 
 p {
     display: none;
+    border-color:#050A30;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .Q1 {
     display: block;
+}
+
+footer button {
+    color:#7EC8E3;
+    background-color:#050A30;
+    font-size: 1.5em;
+    border-color:#7EC8E3;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+    margin: 0.1em;
+    margin-top: 1.3em;
+}
+
+.stats {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#7EC8E3;
+    background-color:#050A30;
+    font-size: 2em;
+    border-color:#7EC8E3;
+    border-style: solid;
+    border-width: 2px;
 }
 
 footer .next {
