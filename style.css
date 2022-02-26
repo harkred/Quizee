@@ -3,15 +3,25 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #0000FF;
+    background-color: #f2f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-family: 'Festive', cursive;
+    font-size: 1.5em;
+    background-color: #000C66;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header h1 {
-    font-family: 'Festive', cursive;
-    font-size: 4.5em;
-    background-color: #000C66;
-    color: #FFFFFF;
-    padding: 0 0.80em 0 0.80em;
+    text-align: center;
 }
 
 h6 {
@@ -19,22 +29,19 @@ h6 {
 }
 
 div {
-    background-color: #7EC8E3;
+    background-color: #e3e3e3;
     color: #050A30;
     display: none;
+    margin-top: 5.3em;
     padding: 0.2em;
-    border-color:#050A30;
-    border-style: solid;
-    border-width: 2px;
-    font-size: 1.6em;
     padding-bottom: 2em;
+    font-size: 1.6em;
+    border-radius: 0.5em;
 }
 
 p {
     display: none;
-    border-color:#050A30;
-    border-style: solid;
-    border-width: 2px;
+    width: 52vw;
 }
 
 .Q1 {
@@ -42,15 +49,22 @@ p {
 }
 
 footer button {
-    color:#7EC8E3;
+    color:#FFFFFF;
     background-color:#050A30;
     font-size: 1.5em;
-    border-color:#7EC8E3;
-    border-style: solid;
-    border-width: 2px;
+    border-style: none;
+    border-radius: 0.3em;
     cursor: pointer;
     margin: 0.1em;
     margin-top: 1.3em;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+}
+
+footer button:hover {
+    background-color: #FFFFFF;
+    color:#050A30;
+    border-color:#050A30;
+    border-style: solid;
 }
 
 .stats {
@@ -59,12 +73,16 @@ footer button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:#7EC8E3;
-    background-color:#050A30;
+    color:#050A30;
+    background-color:#e3e3e3;
     font-size: 2em;
-    border-color:#7EC8E3;
-    border-style: solid;
-    border-width: 2px;
+    border-radius: 0.5em;
+}
+
+@media(max-width: 950px) {
+    p {
+        width: 90vw;
+    }
 }
 
 footer .next {

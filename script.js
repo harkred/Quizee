@@ -19,7 +19,7 @@ check.addEventListener("click", () => {
     }
     
     const valid = document.querySelector(".valid"+currentQtn);
-    valid.style.display = "block";
+    valid.style.display = "flex";
 
     if (opted == "ans") {
         correct++;
@@ -33,9 +33,9 @@ check.addEventListener("click", () => {
 
 
     let ansPara = document.querySelector(".ans"+currentQtn);
-    ansPara.style.display = "block";
+    ansPara.style.display = "flex";
 
-    next.style.display = "block";
+    next.style.display = "flex";
     check.style.display = "none";
 
 })
