@@ -59,9 +59,9 @@ next.addEventListener("click", () => {
     }
 
     let nextQ = document.querySelector(".Q"+currentQtn);
-    nextQ.style.display = "block";
+    nextQ.style.display = "flex";
 
     next.style.display = "none";  
     
-    check.style.display = "block";
+    check.style.display = "flex";
 })
